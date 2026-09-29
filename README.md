@@ -1,7 +1,5 @@
-# Scott Hanley · Candlelight Tavern
+# Scott Hanley · Candlelight Tavern (preview)
 
-Preview story site for Scott Hanley at Candlelight Tavern (Wash Park / South Pearl, Denver).
+GitHub Pages story site. v4 cream magazine immersion + spoken film.
 
 Live: https://samchops1.github.io/spec-candlelight/
-
-v3 natural editorial — warm #100c09, Cormorant + Source Sans 3, solid quiet panels (no glass/blur), storyboard journey, working film.

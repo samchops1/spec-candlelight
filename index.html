@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Scott Hanley · Candlelight Tavern · Denver</title>
   <meta name="description" content="Scott Hanley — longtime Candlelight Tavern bartender on South Pearl, Denver. Called a legend by co-owner Lisa Bryan. 2025 HOSPY Bartender of the Year.">
-  <meta name="theme-color" content="#100c09">
+  <meta name="theme-color" content="#f4efe6">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3natural">
+  <link rel="stylesheet" href="styles.css?v=4cream-immersion">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -70,7 +70,7 @@
         <div class="section-head reveal">
           <p class="kicker">About forty-five seconds</p>
           <h2 id="film-h">Scott, in short</h2>
-          <p class="section-line">Who he is, where he works, why Denver knows his name. Silent, with captions from the spoken script.</p>
+          <p class="section-line">Who he is, where he works, why Denver knows his name. Spoken — natural voice over the storyboard.</p>
         </div>
         <div class="player reveal">
           <video
@@ -79,17 +79,18 @@
             playsinline
             webkit-playsinline
             preload="metadata"
-            poster="assets/scott-summary-poster.jpg?v=vo3"
+            poster="assets/scott-summary-poster.jpg?v=4cream"
             width="1280"
             height="720">
-            <source src="assets/scott-summary.mp4?v=vo3" type="video/mp4">
-            <source src="assets/scott-summary.webm?v=vo3" type="video/webm">
+            <source src="assets/scott-summary.mp4?v=4cream" type="video/mp4">
+            <source src="assets/scott-summary.webm?v=4cream" type="video/webm">
+            <track kind="captions" srclang="en" label="English" src="assets/scott-summary.vtt?v=4cream" default>
           </video>
-          <button type="button" class="play-cue" id="play-cue" aria-controls="scott-film" aria-label="Play Scott’s story">
+          <button type="button" class="play-cue" id="play-cue" aria-controls="scott-film" aria-label="Play Scott’s story with spoken narration">
             <span class="play-disc" aria-hidden="true">
               <span class="play-tri"></span>
             </span>
-            <span class="play-label">Play · ~45 sec · captions</span>
+            <span class="play-label">Play · ~43 sec · spoken</span>
           </button>
         </div>
       </div>
@@ -97,32 +98,43 @@
 
     <!-- 3 Who -->
     <section class="chapter" id="who">
-      <div class="wrap chapter-inner">
-        <header class="chapter-head reveal">
+      <div class="chapter-band">
+        <div class="wrap chapter-inner">
+          <header class="chapter-head reveal">
           <p class="kicker">01 · Who he is</p>
           <h2>A Denver bartender, not a brand</h2>
         </header>
-        <figure class="frame reveal">
+        </div>
+      </div>
+      <figure class="frame-bleed reveal">
           <img src="assets/frames/01-who.jpg" width="1080" height="1350" alt="" loading="lazy">
-        </figure>
-        <div class="prose reveal">
+      </figure>
+      <div class="chapter-copy">
+        <div class="wrap chapter-inner">
+          <div class="prose reveal">
           <p>Scott Hanley works the stick at Candlelight Tavern on South Pearl. Weekends, people show up for him and for <strong>Chris Johnson</strong> — same long shift, same room. Sit there long enough and you’ve heard his name before you put a face to it.</p>
           <p>He’s not selling a cocktail brand online. He’s the guy who’s been there. Dishwasher, busboy, host, waiter, then bartender. He puts the career at about <strong>43 years</strong>, including a stretch in L.A. before Denver.</p>
+        </div>
         </div>
       </div>
     </section>
 
     <!-- 4 Bar -->
-    <section class="chapter" id="bar">
-      <div class="wrap chapter-inner">
-        <header class="chapter-head reveal">
+    <section class="chapter alt" id="bar">
+      <div class="chapter-band">
+        <div class="wrap chapter-inner">
+          <header class="chapter-head reveal">
           <p class="kicker">02 · The bar</p>
           <h2>Candlelight Tavern</h2>
         </header>
-        <figure class="frame reveal">
+        </div>
+      </div>
+      <figure class="frame-bleed reveal">
           <img src="assets/frames/02-bar.jpg" width="1080" height="1350" alt="Candlelight Tavern neon at night" loading="lazy">
-        </figure>
-        <div class="prose reveal">
+      </figure>
+      <div class="chapter-copy">
+        <div class="wrap chapter-inner">
+          <div class="prose reveal">
           <p>Wash Park dive. Neon out front. Cheap drinks, burgers, wings, pool and darts inside. Lisa and Dave Bryan have owned it since <strong>1997</strong>. This is Scott’s home base.</p>
           <p>People argue dive vs neighborhood bar. On the podcasts Scott and Chris shrug at the dive label and talk about late nights to 2 a.m., industry regulars who followed Scott from older stops, and the holiday potlucks Dave and Lisa put on for anyone in the neighborhood who needs a seat. Westword named it Best Dive in 2020. The room still feels like a bar that knows your name.</p>
           <ul class="chips" aria-label="Tavern details">
@@ -133,20 +145,26 @@
             <li>Westword Best Dive 2020</li>
           </ul>
         </div>
+        </div>
       </div>
     </section>
 
     <!-- 5 Years -->
-    <section class="chapter" id="years">
-      <div class="wrap chapter-inner">
-        <header class="chapter-head reveal">
+    <section class="chapter alt" id="years">
+      <div class="chapter-band">
+        <div class="wrap chapter-inner">
+          <header class="chapter-head reveal">
           <p class="kicker">03 · The years</p>
           <h2>How he got here</h2>
         </header>
-        <figure class="frame reveal">
+        </div>
+      </div>
+      <figure class="frame-bleed reveal">
           <img src="assets/frames/03-years.jpg" width="1080" height="1350" alt="Brick column inside Candlelight with regulars’ names" loading="lazy">
-        </figure>
-        <ol class="timeline reveal">
+      </figure>
+      <div class="chapter-copy">
+        <div class="wrap chapter-inner">
+          <ol class="timeline reveal">
           <li>
             <span class="t-year">1992</span>
             <div>
@@ -176,55 +194,73 @@
             </div>
           </li>
         </ol>
+        </div>
       </div>
     </section>
 
     <!-- 6 2018 -->
-    <section class="chapter" id="showed-up">
-      <div class="wrap chapter-inner">
-        <header class="chapter-head reveal">
+    <section class="chapter alt" id="showed-up">
+      <div class="chapter-band">
+        <div class="wrap chapter-inner">
+          <header class="chapter-head reveal">
           <p class="kicker">04 · 2018</p>
           <h2>When Scott got sick, people showed up</h2>
         </header>
-        <figure class="frame reveal">
+        </div>
+      </div>
+      <figure class="frame-bleed reveal">
           <img src="assets/frames/04-2018.jpg" width="1080" height="1350" alt="Community pub crawl fundraiser for Scott" loading="lazy">
-        </figure>
-        <div class="prose reveal">
+      </figure>
+      <div class="chapter-copy">
+        <div class="wrap chapter-inner">
+          <div class="prose reveal">
           <p>In 2018 Scott was diagnosed with cancer. Friends ran a GoFundMe. Candlelight threw a fundraiser night. Kentucky Inn and other bars put on a pub crawl. He took shifts off, got through treatment, and came back to the stick.</p>
           <p>His Facebook lines up with that year: Denver, Candlelight, birthday on <strong>August 30</strong>, the fundraisers.</p>
+        </div>
         </div>
       </div>
     </section>
 
     <!-- 7 HOSPY -->
     <section class="chapter" id="hospy">
-      <div class="wrap chapter-inner">
-        <header class="chapter-head reveal">
+      <div class="chapter-band">
+        <div class="wrap chapter-inner">
+          <header class="chapter-head reveal">
           <p class="kicker">05 · 2025</p>
           <h2>HOSPY Bartender of the Year</h2>
         </header>
-        <figure class="frame reveal">
+        </div>
+      </div>
+      <figure class="frame-bleed reveal">
           <img src="assets/frames/05-2025.jpg" width="1080" height="1350" alt="Scott Hanley HOSPY portrait" loading="lazy">
-        </figure>
-        <div class="prose reveal">
+      </figure>
+      <div class="chapter-copy">
+        <div class="wrap chapter-inner">
+          <div class="prose reveal">
           <p>On <strong>November 10, 2025</strong>, the Colorado Restaurant Association named Scott the <strong>2025 HOSPY Bartender of the Year</strong>. That fall, on a Laxin’ episode, he’d shrugged about the nomination — he hadn’t even known he was in it. The award caught up to what Wash Park already said out loud.</p>
           <p class="hospy-chip">HOSPY 2025 · Colorado Restaurant Association</p>
+        </div>
         </div>
       </div>
     </section>
 
     <!-- 8 Voices -->
-    <section class="chapter" id="voices">
-      <div class="wrap chapter-inner">
-        <header class="chapter-head reveal">
+    <section class="chapter alt" id="voices">
+      <div class="chapter-band">
+        <div class="wrap chapter-inner">
+          <header class="chapter-head reveal">
           <p class="kicker">06 · From the stools</p>
           <h2>What guests write</h2>
           <p class="section-line">Two lines that stick. Exact words.</p>
         </header>
-        <figure class="frame reveal">
+        </div>
+      </div>
+      <figure class="frame-bleed reveal">
           <img src="assets/frames/06-stools.jpg" width="1080" height="1350" alt="" loading="lazy">
-        </figure>
-        <div class="voices reveal">
+      </figure>
+      <div class="chapter-copy">
+        <div class="wrap chapter-inner">
+          <div class="voices reveal">
           <blockquote class="voice">
             <p>“Scott is the nicest bartender in all of Denver.”</p>
             <footer>Olya I. · Apr 4, 2024</footer>
@@ -234,21 +270,27 @@
             <footer>Kathy S. · Nov 6, 2017</footer>
           </blockquote>
         </div>
+        </div>
       </div>
     </section>
 
     <!-- 9 Listen -->
     <section class="chapter" id="listen">
-      <div class="wrap chapter-inner wide">
-        <header class="chapter-head reveal">
+      <div class="chapter-band">
+        <div class="wrap chapter-inner wide">
+          <header class="chapter-head reveal">
           <p class="kicker">07 · On the mic</p>
           <h2>Hear him talk</h2>
           <p class="section-line">Three full episodes with Scott and Chris. The tenure dates and bar stories above come from these recordings — not a press kit.</p>
         </header>
-        <figure class="frame frame-wide reveal">
+        </div>
+      </div>
+      <figure class="frame-bleed frame-wide reveal">
           <img src="assets/frames/07-mic-cards.jpg" width="1080" height="600" alt="" loading="lazy">
-        </figure>
-        <div class="sources">
+      </figure>
+      <div class="chapter-copy">
+        <div class="wrap chapter-inner wide">
+          <div class="sources">
           <article class="source reveal">
             <p class="source-show">Who The Fuck Closed Last Night? · S1E17</p>
             <h3>At Candlelight with Chad &amp; Jacob</h3>
@@ -279,6 +321,7 @@
               <a class="ghost-link" href="https://rss.com/podcasts/laxin-at-the-lair/3119060" rel="noopener" target="_blank">RSS</a>
             </p>
           </article>
+        </div>
         </div>
       </div>
     </section>
