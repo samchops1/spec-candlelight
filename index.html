@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Scott Hanley · Candlelight Tavern · Denver</title>
   <meta name="description" content="Scott Hanley — longtime Candlelight Tavern bartender on South Pearl, Denver. Called a legend by co-owner Lisa Bryan. 2025 HOSPY Bartender of the Year.">
-  <meta name="theme-color" content="#100a08">
+  <meta name="theme-color" content="#07080c">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,7 +21,9 @@
         <span class="brand-name">Scott Hanley</span>
         <span class="brand-place">Candlelight · Denver</span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
       <nav class="nav" id="nav" aria-label="Primary">
         <a href="#who">Who</a>
         <a href="#bar">The bar</a>
@@ -37,16 +39,15 @@
 
   <main id="main">
 
+    <!-- 1 Hero -->
     <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
       <div class="wrap hero-grid">
-        <figure class="hero-portrait">
-          <picture>
-            <source type="image/webp" srcset="assets/scott-hanley.webp">
-            <img src="assets/scott-hanley.jpg" width="599" height="600" alt="Scott Hanley at Candlelight Tavern — smiling under an Old Style neon">
-          </picture>
+        <figure class="hero-portrait reveal">
+          <img src="assets/scott-hanley.jpg" width="599" height="600" alt="Scott Hanley at Candlelight Tavern — smiling under an Old Style neon">
           <figcaption>Scott Hanley · HOSPY Bartender of the Year 2025</figcaption>
         </figure>
-        <div class="hero-copy">
+        <div class="hero-copy reveal">
           <p class="eyebrow">Wash Park · 383 S Pearl · Denver</p>
           <h1>Scott Hanley</h1>
           <p class="tagline">The bartender they call a legend.</p>
@@ -63,18 +64,20 @@
       </div>
     </section>
 
+    <!-- 2 Film -->
     <section class="film" id="film" aria-labelledby="film-h">
       <div class="wrap film-wrap">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="kicker">About two minutes</p>
           <h2 id="film-h">Scott, in short</h2>
-          <p>Who he is, where he works, why Denver knows his name.</p>
+          <p class="section-line">Who he is, where he works, why Denver knows his name.</p>
         </div>
-        <div class="player">
+        <div class="player reveal">
           <video
             id="scott-film"
             controls
             playsinline
+            webkit-playsinline
             preload="metadata"
             poster="assets/scott-summary-poster.jpg"
             width="1280"
@@ -82,57 +85,68 @@
             <source src="assets/scott-summary.mp4" type="video/mp4">
             <source src="assets/scott-summary.webm" type="video/webm">
           </video>
-          <button type="button" class="play-cue" id="play-cue" aria-controls="scott-film">
-            <span class="play-icon" aria-hidden="true"></span>
-            <span class="play-label">Play Scott’s story · ~30 sec</span>
+          <button type="button" class="play-cue" id="play-cue" aria-controls="scott-film" aria-label="Play Scott’s story">
+            <span class="play-disc" aria-hidden="true">
+              <span class="play-tri"></span>
+            </span>
+            <span class="play-label">Play · ~30 sec</span>
           </button>
         </div>
       </div>
     </section>
 
-    <section class="beat-sec" id="who">
-      <div class="wrap narrow">
-        <p class="kicker">01 · Who he is</p>
-        <h2>A Denver bartender, not a brand</h2>
-        <p>Scott Hanley works the stick at Candlelight Tavern on South Pearl. Weekends, people show up for him and for <strong>Chris Johnson</strong> — same long shift, same room. Sit there long enough and you’ve heard his name before you put a face to it.</p>
-        <p>He’s not selling a cocktail brand online. He’s the guy who’s been there. Dishwasher, busboy, host, waiter, then bartender. He puts the career at about <strong>43 years</strong>, including a stretch in L.A. before Denver.</p>
-      </div>
-    </section>
-
-    <section class="beat-sec alt" id="bar">
-      <div class="wrap">
-        <div class="two-col">
-          <div>
-            <p class="kicker">02 · The bar</p>
-            <h2>Candlelight Tavern</h2>
-            <p>Wash Park dive. Neon out front. Cheap drinks, burgers, wings, pool and darts inside. Lisa and Dave Bryan have owned it since <strong>1997</strong>. This is Scott’s home base.</p>
-            <p>People argue dive vs neighborhood bar. On the podcasts Scott and Chris shrug at the dive label and talk about late nights to 2 a.m., industry regulars who followed Scott from older stops, and the holiday potlucks Dave and Lisa put on for anyone in the neighborhood who needs a seat. Westword named it Best Dive in 2020. The room still feels like a bar that knows your name.</p>
-            <ul class="chips" aria-label="Tavern details">
-              <li>383 S Pearl</li>
-              <li>Pool · darts · Jenga · foosball</li>
-              <li>Burgers, chili, wings</li>
-              <li>Lions + Broncos</li>
-              <li>Westword Best Dive 2020</li>
-            </ul>
-          </div>
-          <figure class="scene">
-            <picture>
-              <source type="image/webp" srcset="assets/hero-neon.webp">
-              <img src="assets/hero-neon.jpg" width="1200" height="676" alt="Candlelight Tavern neon sign at night" loading="lazy">
-            </picture>
-            <figcaption>The neon on South Pearl · Photo: Westword</figcaption>
-          </figure>
+    <!-- 3 Who -->
+    <section class="chapter" id="who">
+      <div class="wrap chapter-inner">
+        <header class="chapter-head reveal">
+          <p class="kicker">01 · Who he is</p>
+          <h2>A Denver bartender, not a brand</h2>
+        </header>
+        <figure class="frame reveal">
+          <img src="assets/frames/01-who.jpg" width="1080" height="1350" alt="" loading="lazy">
+        </figure>
+        <div class="prose reveal">
+          <p>Scott Hanley works the stick at Candlelight Tavern on South Pearl. Weekends, people show up for him and for <strong>Chris Johnson</strong> — same long shift, same room. Sit there long enough and you’ve heard his name before you put a face to it.</p>
+          <p>He’s not selling a cocktail brand online. He’s the guy who’s been there. Dishwasher, busboy, host, waiter, then bartender. He puts the career at about <strong>43 years</strong>, including a stretch in L.A. before Denver.</p>
         </div>
       </div>
     </section>
 
-    <section class="beat-sec" id="years">
-      <div class="wrap">
-        <div class="section-head">
+    <!-- 4 Bar -->
+    <section class="chapter" id="bar">
+      <div class="wrap chapter-inner">
+        <header class="chapter-head reveal">
+          <p class="kicker">02 · The bar</p>
+          <h2>Candlelight Tavern</h2>
+        </header>
+        <figure class="frame reveal">
+          <img src="assets/frames/02-bar.jpg" width="1080" height="1350" alt="Candlelight Tavern neon at night" loading="lazy">
+        </figure>
+        <div class="prose reveal">
+          <p>Wash Park dive. Neon out front. Cheap drinks, burgers, wings, pool and darts inside. Lisa and Dave Bryan have owned it since <strong>1997</strong>. This is Scott’s home base.</p>
+          <p>People argue dive vs neighborhood bar. On the podcasts Scott and Chris shrug at the dive label and talk about late nights to 2 a.m., industry regulars who followed Scott from older stops, and the holiday potlucks Dave and Lisa put on for anyone in the neighborhood who needs a seat. Westword named it Best Dive in 2020. The room still feels like a bar that knows your name.</p>
+          <ul class="chips" aria-label="Tavern details">
+            <li>383 S Pearl</li>
+            <li>Pool · darts · Jenga · foosball</li>
+            <li>Burgers, chili, wings</li>
+            <li>Lions + Broncos</li>
+            <li>Westword Best Dive 2020</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 Years -->
+    <section class="chapter" id="years">
+      <div class="wrap chapter-inner">
+        <header class="chapter-head reveal">
           <p class="kicker">03 · The years</p>
           <h2>How he got here</h2>
-        </div>
-        <ol class="timeline">
+        </header>
+        <figure class="frame reveal">
+          <img src="assets/frames/03-years.jpg" width="1080" height="1350" alt="Brick column inside Candlelight with regulars’ names" loading="lazy">
+        </figure>
+        <ol class="timeline reveal">
           <li>
             <span class="t-year">1992</span>
             <div>
@@ -162,70 +176,80 @@
             </div>
           </li>
         </ol>
-        <figure class="scene scene-wide">
-          <picture>
-            <source type="image/webp" srcset="assets/bar-column.webp">
-            <img src="assets/bar-column.jpg" width="900" height="1600" alt="Brick column inside Candlelight covered in hand-painted regulars’ names" loading="lazy">
-          </picture>
-          <figcaption>Names on the brick · Photo: Westword / Sarah McGill</figcaption>
-        </figure>
       </div>
     </section>
 
-    <section class="beat-sec alt" id="showed-up">
-      <div class="wrap">
-        <div class="two-col flip">
-          <div>
-            <p class="kicker">04 · 2018</p>
-            <h2>When Scott got sick, people showed up</h2>
-            <p>In 2018 Scott was diagnosed with cancer. Friends ran a GoFundMe. Candlelight threw a fundraiser night. Kentucky Inn and other bars put on a pub crawl. He took shifts off, got through treatment, and came back to the stick.</p>
-            <p>His Facebook lines up with that year: Denver, Candlelight, birthday on <strong>August 30</strong>, the fundraisers. Nothing there about painting or a shooting — so those stay off this page.</p>
-          </div>
-          <figure class="scene">
-            <picture>
-              <source type="image/webp" srcset="assets/scott-community.webp">
-              <img src="assets/scott-community.jpg" width="723" height="424" alt="Scott Hanley with supporters at a community pub crawl fundraiser" loading="lazy">
-            </picture>
-            <figcaption>Pub crawl fundraiser · GoFundMe</figcaption>
-          </figure>
+    <!-- 6 2018 -->
+    <section class="chapter" id="showed-up">
+      <div class="wrap chapter-inner">
+        <header class="chapter-head reveal">
+          <p class="kicker">04 · 2018</p>
+          <h2>When Scott got sick, people showed up</h2>
+        </header>
+        <figure class="frame reveal">
+          <img src="assets/frames/04-2018.jpg" width="1080" height="1350" alt="Community pub crawl fundraiser for Scott" loading="lazy">
+        </figure>
+        <div class="prose reveal">
+          <p>In 2018 Scott was diagnosed with cancer. Friends ran a GoFundMe. Candlelight threw a fundraiser night. Kentucky Inn and other bars put on a pub crawl. He took shifts off, got through treatment, and came back to the stick.</p>
+          <p>His Facebook lines up with that year: Denver, Candlelight, birthday on <strong>August 30</strong>, the fundraisers.</p>
         </div>
       </div>
     </section>
 
-    <section class="beat-sec hospy-sec" id="hospy">
-      <div class="wrap narrow">
-        <p class="kicker">05 · 2025</p>
-        <h2>HOSPY Bartender of the Year</h2>
-        <p>On <strong>November 10, 2025</strong>, the Colorado Restaurant Association named Scott the <strong>2025 HOSPY Bartender of the Year</strong>. That fall, on a Laxin’ episode, he’d shrugged about the nomination — he hadn’t even known he was in it. The award caught up to what Wash Park already said out loud.</p>
-        <p class="hospy-tag">HOSPY 2025 · Colorado Restaurant Association</p>
+    <!-- 7 HOSPY -->
+    <section class="chapter" id="hospy">
+      <div class="wrap chapter-inner">
+        <header class="chapter-head reveal">
+          <p class="kicker">05 · 2025</p>
+          <h2>HOSPY Bartender of the Year</h2>
+        </header>
+        <figure class="frame reveal">
+          <img src="assets/frames/05-2025.jpg" width="1080" height="1350" alt="Scott Hanley HOSPY portrait" loading="lazy">
+        </figure>
+        <div class="prose reveal">
+          <p>On <strong>November 10, 2025</strong>, the Colorado Restaurant Association named Scott the <strong>2025 HOSPY Bartender of the Year</strong>. That fall, on a Laxin’ episode, he’d shrugged about the nomination — he hadn’t even known he was in it. The award caught up to what Wash Park already said out loud.</p>
+          <p class="hospy-chip">HOSPY 2025 · Colorado Restaurant Association</p>
+        </div>
       </div>
     </section>
 
-    <section class="beat-sec alt" id="voices">
-      <div class="wrap narrow">
-        <p class="kicker">06 · From the stools</p>
-        <h2>What guests write</h2>
-        <p class="sub">Two lines that stick. Exact words.</p>
-        <blockquote class="voice">
-          <p>“Scott is the nicest bartender in all of Denver.”</p>
-          <footer>Olya I. · Apr 4, 2024</footer>
-        </blockquote>
-        <blockquote class="voice">
-          <p>“The bartender Scott…is a real hoot!”</p>
-          <footer>Kathy S. · Nov 6, 2017</footer>
-        </blockquote>
+    <!-- 8 Voices -->
+    <section class="chapter" id="voices">
+      <div class="wrap chapter-inner">
+        <header class="chapter-head reveal">
+          <p class="kicker">06 · From the stools</p>
+          <h2>What guests write</h2>
+          <p class="section-line">Two lines that stick. Exact words.</p>
+        </header>
+        <figure class="frame reveal">
+          <img src="assets/frames/06-stools.jpg" width="1080" height="1350" alt="" loading="lazy">
+        </figure>
+        <div class="voices reveal">
+          <blockquote class="voice">
+            <p>“Scott is the nicest bartender in all of Denver.”</p>
+            <footer>Olya I. · Apr 4, 2024</footer>
+          </blockquote>
+          <blockquote class="voice">
+            <p>“The bartender Scott…is a real hoot!”</p>
+            <footer>Kathy S. · Nov 6, 2017</footer>
+          </blockquote>
+        </div>
       </div>
     </section>
 
-    <section class="beat-sec" id="listen">
-      <div class="wrap">
-        <div class="section-head">
+    <!-- 9 Listen -->
+    <section class="chapter" id="listen">
+      <div class="wrap chapter-inner wide">
+        <header class="chapter-head reveal">
           <p class="kicker">07 · On the mic</p>
           <h2>Hear him talk</h2>
-          <p>Three full episodes with Scott and Chris. The tenure dates and bar stories above come from these recordings — not a press kit.</p>
-        </div>
+          <p class="section-line">Three full episodes with Scott and Chris. The tenure dates and bar stories above come from these recordings — not a press kit.</p>
+        </header>
+        <figure class="frame frame-wide reveal">
+          <img src="assets/frames/07-mic-cards.jpg" width="1080" height="600" alt="" loading="lazy">
+        </figure>
         <div class="sources">
-          <article class="source">
+          <article class="source reveal">
             <p class="source-show">Who The Fuck Closed Last Night? · S1E17</p>
             <h3>At Candlelight with Chad &amp; Jacob</h3>
             <p class="source-meta">Oct 13, 2025 · 1:06 · Recorded on Pearl</p>
@@ -233,7 +257,7 @@
             <p class="source-quote">“I’ve been here going on 27 years now.” <cite>— Scott</cite></p>
             <p class="source-links"><a href="https://rss.com/podcasts/who-the-fuck-closed-last-night/2268417/" rel="noopener" target="_blank">Listen</a></p>
           </article>
-          <article class="source">
+          <article class="source reveal">
             <p class="source-show">Laxin’ at the Lair · Ep 43</p>
             <h3>Scott &amp; Chris at Lion’s Lair</h3>
             <p class="source-meta">Oct 23, 2025 · 1:26 · Chuck Gibson &amp; Travis Dowdy</p>
@@ -241,10 +265,10 @@
             <p class="source-quote">“I started [at] the Candlelight in ’98.” <cite>— Scott</cite></p>
             <p class="source-links">
               <a href="https://www.youtube.com/watch?v=5bivs0-pUBo" rel="noopener" target="_blank">Watch</a>
-              <a class="ghost" href="https://rss.com/podcasts/laxin-at-the-lair/2991701" rel="noopener" target="_blank">RSS</a>
+              <a class="ghost-link" href="https://rss.com/podcasts/laxin-at-the-lair/2991701" rel="noopener" target="_blank">RSS</a>
             </p>
           </article>
-          <article class="source">
+          <article class="source reveal">
             <p class="source-show">Laxin’ at the Lair · Chuck’s birthday</p>
             <h3>Scott, Chris &amp; Chad (Fuck Yes Tequila)</h3>
             <p class="source-meta">Sep 3, 2026 · ~1:25 · Lion’s Lair</p>
@@ -252,22 +276,23 @@
             <p class="source-quote">“I’ve actually been married to Scott longer than my wife.” <cite>— Chris</cite></p>
             <p class="source-links">
               <a href="https://www.youtube.com/watch?v=0Zwp6KV5XBc" rel="noopener" target="_blank">Watch</a>
-              <a class="ghost" href="https://rss.com/podcasts/laxin-at-the-lair/3119060" rel="noopener" target="_blank">RSS</a>
+              <a class="ghost-link" href="https://rss.com/podcasts/laxin-at-the-lair/3119060" rel="noopener" target="_blank">RSS</a>
             </p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- 10 Visit -->
     <section class="visit" id="visit">
       <div class="wrap">
-        <div class="section-head">
+        <header class="chapter-head reveal">
           <p class="kicker">Pull up a stool</p>
           <h2>Find Scott at Candlelight</h2>
-          <p>Open late. Come for the pour.</p>
-        </div>
+          <p class="section-line">Open late. Come for the pour.</p>
+        </header>
         <div class="visit-grid">
-          <div class="visit-panel">
+          <div class="visit-panel reveal">
             <h3>Hours</h3>
             <ul class="hours">
               <li><span>Mon – Fri</span><span>11am – 2am</span></li>
@@ -285,7 +310,7 @@
             <a class="btn btn-primary" href="tel:+13037789530">Call the tavern</a>
             <p class="note">Owners: Lisa &amp; Dave Bryan since 1997. Scott works with Chris Johnson.</p>
           </div>
-          <div class="map-frame">
+          <div class="map-frame reveal">
             <iframe title="Map of Candlelight Tavern" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Candlelight%20Tavern%20383%20S%20Pearl%20St%20Denver%20CO&amp;z=15&amp;output=embed"></iframe>
           </div>
         </div>
@@ -294,11 +319,11 @@
   </main>
 
   <footer class="site-foot">
-    <div class="wrap">
+    <div class="wrap foot-inner">
       <div>
         <strong>Scott Hanley</strong> at Candlelight Tavern · Wash Park / South Pearl · Denver<br>
-        Preview story site for Sameer — not the official Candlelight Tavern website.<br>
-        Portrait: HOSPY / Instagram · Tavern photos: Westword / Sarah McGill · Community: GoFundMe.
+        Preview story site — not the official Candlelight Tavern website.<br>
+        Portrait: HOSPY / Instagram · Frames &amp; tavern photos: verified research pack.
       </div>
       <div>
         Official bar: <a href="https://candlelighttavern.com">candlelighttavern.com</a><br>

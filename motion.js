@@ -25,21 +25,22 @@
     var showCue = function () {
       if (video.paused) cue.classList.remove('is-hidden');
     };
-    cue.addEventListener('click', function () {
+    cue.addEventListener('click', function (e) {
+      e.preventDefault();
       hideCue();
       var p = video.play();
-      if (p && typeof p.catch === 'function') p.catch(function () { showCue(); });
+      if (p && typeof p.catch === 'function') {
+        p.catch(function () { showCue(); });
+      }
     });
     video.addEventListener('play', hideCue);
+    video.addEventListener('playing', hideCue);
     video.addEventListener('pause', showCue);
     video.addEventListener('ended', showCue);
   }
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var nodes = Array.prototype.slice.call(document.querySelectorAll(
-    '.hero-portrait, .hero-copy, .film-wrap .section-head, .player, .beat-sec .narrow, .beat-sec .two-col, .timeline li, .scene-wide, .hospy-sec .narrow, .voice, .source, .visit-panel, .map-frame'
-  ));
-  nodes.forEach(function (el) { el.classList.add('reveal'); });
+  var nodes = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
   if (reduce || !('IntersectionObserver' in window)) {
     nodes.forEach(function (el) { el.classList.add('is-in'); });
     return;
