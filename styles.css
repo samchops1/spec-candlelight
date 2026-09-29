@@ -359,7 +359,7 @@ a:hover { color: var(--gold); }
 .tavern { padding: 4rem 0 3.5rem; }
 .tavern-grid {
   display: grid;
-  grid-template-columns: 1.4fr 0.85fr 1.1fr;
+  grid-template-columns: 1.4fr 0.85fr;
   gap: .85rem;
   margin-bottom: 1.5rem;
 }

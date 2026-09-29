@@ -28,4 +28,4 @@ Static preview for Sameer. Not the official site. Re-publish not done here.
 
 ## Assets used
 
-`assets/scott-hanley.jpg|.webp` · `hero-neon` · `bar-column` · `shuffleboard` · `favicon.svg`
+`assets/scott-hanley.jpg|.webp` · `hero-neon` · `bar-column` · `favicon.svg`
