@@ -5,7 +5,9 @@
 - **Styles:** `/workspace/previews/candlelight/styles.css`
 - Official bar: https://candlelighttavern.com · @candlelighttavern
 
-Static preview for Sameer. Not the official site. Re-publish not done here.
+Static preview for Sameer. Not the official site.
+
+**On the mic:** full summaries for WTFCLN S1E17, Laxin Oct 2025 (YT Ep 43), Laxin Chuck birthday Sep 2026 — see `/workspace/research/candlelight-scott/PODCAST_SUMMARIES.md` and `transcripts/`.
 
 ## Facts on the page (verified only)
 

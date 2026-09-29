@@ -317,6 +317,74 @@ a:hover { color: var(--gold); }
   color: var(--muted);
 }
 
+
+/* On the mic — content section, minimal */
+.story-mic-teaser {
+  margin: 2rem 0 0;
+  font-size: .95rem;
+  color: var(--muted);
+}
+.story-mic-teaser a { color: var(--amber); text-decoration: none; border-bottom: 1px solid rgba(255,138,26,.35); }
+.story-mic-teaser a:hover { color: var(--gold); }
+
+.on-mic {
+  padding: 3.5rem 0 4rem;
+  border-top: 1px solid var(--line);
+}
+.on-mic .ep {
+  margin-top: 2rem;
+  padding: 1.35rem 1.25rem 1.5rem;
+  background: var(--bg-lift);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.on-mic .ep + .ep { margin-top: 1.25rem; }
+.ep-show {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: .68rem;
+  color: var(--amber);
+  margin: 0 0 .35rem;
+}
+.ep-head h3 {
+  font-family: var(--font-serif, var(--font-body));
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 .35rem;
+  color: var(--cream);
+}
+.ep-meta { margin: 0; font-size: .88rem; color: var(--muted); }
+.ep-links { margin: .55rem 0 0; font-size: .88rem; }
+.ep-links a { color: var(--amber); }
+.ep-body { margin-top: 1rem; }
+.ep-body p { margin: 0 0 .75rem; color: var(--cream); line-height: 1.55; max-width: 62rem; }
+.ep-body p:last-child { margin-bottom: 0; }
+.ep-quotes {
+  margin: 1.1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: .55rem;
+}
+.ep-quotes li {
+  padding: .65rem .8rem;
+  border-left: 3px solid var(--amber);
+  background: var(--panel);
+  font-size: .92rem;
+  line-height: 1.45;
+  color: var(--cream);
+}
+.ep-quotes cite {
+  display: inline;
+  font-style: normal;
+  color: var(--muted);
+  font-size: .85rem;
+}
+@media (max-width: 720px) {
+  .on-mic .ep { padding: 1.1rem 1rem 1.25rem; }
+}
+
 /* Voices */
 .voices {
   padding: 3.5rem 0 4rem;
