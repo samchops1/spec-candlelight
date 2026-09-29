@@ -4,4 +4,4 @@ Preview story site for Scott Hanley at Candlelight Tavern (Wash Park / South Pea
 
 Live: https://samchops1.github.io/spec-candlelight/
 
-Natural editorial rebuild — warm paper/cream shell, photographic frames, Syne + Inter, storyboard journey chapters, working film.
+v3 natural editorial — warm #100c09, Cormorant + Source Sans 3, solid quiet panels (no glass/blur), storyboard journey, working film.
